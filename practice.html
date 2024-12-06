@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/html-icon-1451x2048-69sehqrp.png"
+        type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; color: blue;">HTML</h1>
+    <h1>Optgroup</h1>
+    <label for="bike">Select your bike :</label>
+    <select name="bikes" id="bike">
+        <option value="---select---" selected disabled>---select---</option>
+        <optgroup label="150cc">
+            <option value="Pulser">pulser</option>
+            <option value="Fz">FZ</option>
+            <option value="Shine">Shine</option>
+        </optgroup>
+        <optgroup label="200cc">
+            <option value="NS">NS200</option>
+            <option value="Apache">Apache</option>
+            <option value="R15">R15</option>
+        </optgroup>
+    </select>
+    <br>
+    <h1>Datalist</h1>
+    <label for="mobile">Select your mobile :</label>
+    <input type="text" name="ph" id="mobile" list="type">
+    <datalist id="type">
+        <!-- No Need here -->
+        <!-- <option value="---select---"  disabled>---select---</option> -->
+        <option value="Realme">Realme</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Nord">Nord</option>
+    </datalist>
+    <br>
+    <h1>Form Tags</h1>
+    <form action="" method="get" autocomplete="off" enctype="multipart/form-data">
+
+        <label for="name">UserName :</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="mail">Email :</label>
+        <input type="text" name="email" id="mail" pattern="[a-z\d]+@(gmail|outlook|yahoo)+\.(com|in|org)"
+            title="Must should enter small letters and digits">
+        <br>
+        <label for="psw">Password :</label>
+        <input type="text" name="psw" id="psw" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*\W).{3,12}"
+            title="Must and should enter small and capital letter and digits upto length max is 12 and min 3">
+        <br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gen" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gen" id="female" value="Female">
+        <label for="female">Female</label>
+        <br>
+        <label for="">Select your bikes and cars :</label>
+        <input type="checkbox" name="bikes" id="bikes">
+        <label for="bikes">NS200</label>
+        <input type="checkbox" name="cars" id="cars">
+        <label for="cars">BMW</label>
+        <br>
+        <input type="file" name="" id="" multiple>
+        <br>
+        <input type="submit" value="login">
+    </form>
+    <h1>Details and Summary </h1>
+    <details>
+        <summary>Front End</summary>
+        <details>
+            <summary>Html</summary>
+            <p>hypertext markup language</p>
+        </details>
+
+        <details>
+            <summary>CSS</summary>
+            <p>cascading style sheet</p>
+        </details>
+        <details>
+            <summary>JAVA SCRIPt</summary>
+            <p>Scripting language</p>
+        </details>
+    </details>
+    </details>
+    <h1>Multimedia</h1>
+    <audio autoplay muted controls>
+        <source src="" type="mp3/m4a">
+    </audio>
+    <video autoplay controls muted poster="">
+        <source src="" type="mp4/mkv">
+    </video>
+
+    <h1>TextArea</h1>
+    <textarea name="" id="" rows="10"
+        cols="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur minima dignissimos quas tenetur voluptas! Consequuntur debitis, animi numquam iusto delectus labore nemo pariatur, impedit quia itaque doloremque deserunt distinctio?</textarea>
+    <br>
+    <h1>Marquee</h1>
+    <marquee behavior="alternate" direction="right" height="100px" scrollamount="10x">
+        <marquee behavior="alternate" direction="up" width="50px" height="50px" scrolamount="10px">Html</marquee>
+    </marquee>
+    <h1>Image</h1>
+    <img src="./nature2.avif" alt="image" width="200px" height="300px" title="nature">
+    <h1>Anchor Tag</h1>
+    <a href="http://www.google.com" title="google website" target="_blank">google</a>
+    <br>
+    <a href="./nature2.avif" target="_self" download="3"><img src="./nature2.avif" alt="image" width="200px"
+            height="300px" title="dwn"></a>
+    <br>
+    <h1>Iframes</h1>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" frameborder="1" name="frame1"></iframe>
+    <br>
+    <a href="https://www.youtube.com/embed/xSr1Eu3AIPg?si=zwF9FSK3tc9hsiEv" target="frame1">youtube</a>
+    <br>
+    <h1>Bookmarking</h1>
+    <a href="#1">Chapter-1</a>
+    <a href="#2">Chapter-2</a>
+    <a href="#3">Chapter-3</a>
+    <a href="#4">Chapter-4</a>
+    <a href="#5">Chapter-5</a>
+    <h1 id="1">Chapter-1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio veritatis quod ipsum ullam laboriosam
+        hic dolorum iusto assumenda quis. Optio, unde! Repellat ex ut molestias quae quod ratione voluptatem!
+        Magnam laborum nesciunt ipsam harum id enim dolor nulla quidem perferendis at ducimus dicta aliquid possimus sit
+        neque nam quod minima, libero sint tempora. Autem natus velit beatae eos dicta?
+        Necessitatibus ipsa quae veniam odio? Hic, odit. Expedita voluptate laborum iure nobis voluptatem. Tenetur
+        laborum amet exercitationem. Vero dignissimos temporibus illum, ullam veniam reprehenderit vitae sint est quis
+        exercitationem eaque.
+        Libero adipisci consectetur velit, soluta esse necessitatibus voluptatibus laboriosam? Qui et quibusdam
+        doloremque nisi iure eius ad cum perferendis, nemo enim, officiis itaque nam doloribus aperiam consequatur
+        repellat earum laboriosam.</p>
+    <h1 id="2">Chapter-2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio veritatis quod ipsum ullam laboriosam
+        hic dolorum iusto assumenda quis. Optio, unde! Repellat ex ut molestias quae quod ratione voluptatem!
+        Magnam laborum nesciunt ipsam harum id enim dolor nulla quidem perferendis at ducimus dicta aliquid possimus sit
+        neque nam quod minima, libero sint tempora. Autem natus velit beatae eos dicta?
+        Necessitatibus ipsa quae veniam odio? Hic, odit. Expedita voluptate laborum iure nobis voluptatem. Tenetur
+        laborum amet exercitationem. Vero dignissimos temporibus illum, ullam veniam reprehenderit vitae sint est quis
+        exercitationem eaque.
+        Libero adipisci consectetur velit, soluta esse necessitatibus voluptatibus laboriosam? Qui et quibusdam
+        doloremque nisi iure eius ad cum perferendis, nemo enim, officiis itaque nam doloribus aperiam consequatur
+        repellat earum laboriosam.</p>
+
+    <h1 id="3">Chapter-3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio veritatis quod ipsum ullam laboriosam
+        hic dolorum iusto assumenda quis. Optio, unde! Repellat ex ut molestias quae quod ratione voluptatem!
+        Magnam laborum nesciunt ipsam harum id enim dolor nulla quidem perferendis at ducimus dicta aliquid possimus sit
+        neque nam quod minima, libero sint tempora. Autem natus velit beatae eos dicta?
+        Necessitatibus ipsa quae veniam odio? Hic, odit. Expedita voluptate laborum iure nobis voluptatem. Tenetur
+        laborum amet exercitationem. Vero dignissimos temporibus illum, ullam veniam reprehenderit vitae sint est quis
+        exercitationem eaque.
+        Libero adipisci consectetur velit, soluta esse necessitatibus voluptatibus laboriosam? Qui et quibusdam
+        doloremque nisi iure eius ad cum perferendis, nemo enim, officiis itaque nam doloribus aperiam consequatur
+        repellat earum laboriosam.</p>
+
+    <h1 id="4">Chapter-4</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio veritatis quod ipsum ullam laboriosam
+        hic dolorum iusto assumenda quis. Optio, unde! Repellat ex ut molestias quae quod ratione voluptatem!
+        Magnam laborum nesciunt ipsam harum id enim dolor nulla quidem perferendis at ducimus dicta aliquid possimus sit
+        neque nam quod minima, libero sint tempora. Autem natus velit beatae eos dicta?
+        Necessitatibus ipsa quae veniam odio? Hic, odit. Expedita voluptate laborum iure nobis voluptatem. Tenetur
+        laborum amet exercitationem. Vero dignissimos temporibus illum, ullam veniam reprehenderit vitae sint est quis
+        exercitationem eaque.
+        Libero adipisci consectetur velit, soluta esse necessitatibus voluptatibus laboriosam? Qui et quibusdam
+        doloremque nisi iure eius ad cum perferendis, nemo enim, officiis itaque nam doloribus aperiam consequatur
+        repellat earum laboriosam.</p>
+
+    <h1 id="5">Chapter-5</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio veritatis quod ipsum ullam laboriosam
+        hic dolorum iusto assumenda quis. Optio, unde! Repellat ex ut molestias quae quod ratione voluptatem!
+        Magnam laborum nesciunt ipsam harum id enim dolor nulla quidem perferendis at ducimus dicta aliquid possimus sit
+        neque nam quod minima, libero sint tempora. Autem natus velit beatae eos dicta?
+        Necessitatibus ipsa quae veniam odio? Hic, odit. Expedita voluptate laborum iure nobis voluptatem. Tenetur
+        laborum amet exercitationem. Vero dignissimos temporibus illum, ullam veniam reprehenderit vitae sint est quis
+        exercitationem eaque.
+        Libero adipisci consectetur velit, soluta esse necessitatibus voluptatibus laboriosam? Qui et quibusdam
+        doloremque nisi iure eius ad cum perferendis, nemo enim, officiis itaque nam doloribus aperiam consequatur
+        repellat earum laboriosam.</p>
+    <h1>Lists</h1>
+    <h4>Unordered List</h4>
+    <ul type="circle">
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+    </ul>
+    <h4>Ordered List</h4>
+    <ol type="A" reversed start="4">
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+    </ol>
+    <h4>Description list</h4>
+    <dd>
+    <dt>Html</dt>
+    <dd>hypertext markup language</dd>
+    <dt>Css</dt>
+    <dd>Cascading style sheet</dd>
+    </dd>
+    <h1>Table</h1>
+    <table border="1" cellpadding="5px" cellspacing="4px">
+        <tr>
+            <th>Movie</th>
+            <th>Hero</th>
+            <th>Director</th>
+        </tr>
+        <tr>
+            <td>Devara</td>
+            <td>NTR</td>
+            <td>SIVA</td>
+        </tr>
+        <tr>
+            <td>Pushpa</td>
+            <td>Arjun</td>
+            <td>Sukumar</td>
+        </tr>
+    </table>
+    <br>
+    <a href="http://wa.me/7995153579?text=hi">whatsapp</a>
+    <br>
+    <a href="mailto:bashavalishaik@gmail.com?subject=leave&body=hello%20">Mail</a>
+    <br>
+    <a href="sms:7995153579?body=hi">sms</a>
+    <br>
+    <a href="tel:7995153579?">call</a>
+</body>
+
+</html>

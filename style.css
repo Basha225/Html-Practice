@@ -1,0 +1,35 @@
+h1{
+    background-color: yellow;
+    color: blue;
+    text-align: center;
+}
+marquee{
+    background-color: red;
+    color: blue;
+}
+table{
+    color: red;
+    background-color: yellow;
+}
+ul{
+    color: red;
+}
+ol{
+    color: blue;
+}
+dt{
+    color: green;
+}
+dd{
+    color: lightcoral;
+}
+h4{
+    color: gray;
+}
+summary{
+    color: red;
+}
+p{
+    font-size: 18px;
+    color: purple;
+}
